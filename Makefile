@@ -1,5 +1,5 @@
 SHELL := /bin/bash
-GO := GO15VENDOREXPERIMENT=1 go
+GO := GO111MODULE=on go
 NAME := goproxy
 OS := $(shell uname)
 MAIN_GO := server/cmd/simple-server/main.go
