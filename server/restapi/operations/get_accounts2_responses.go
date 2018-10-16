@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	models "goproxy/server/models"
+	models "github.com/stevef1uk/goproxy/server/models"
 )
 
 // GetAccounts2OKCode is the HTTP code returned for type GetAccounts2OK

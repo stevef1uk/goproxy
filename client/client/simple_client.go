@@ -11,7 +11,7 @@ import (
 
 	strfmt "github.com/go-openapi/strfmt"
 
-	"goproxy/client/client/operations"
+	"github.com/stevef1uk/goproxy/client/client/operations"
 )
 
 // Default simple HTTP client.

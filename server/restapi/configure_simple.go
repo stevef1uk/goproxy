@@ -11,8 +11,8 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/tylerb/graceful"
 
-	"goproxy/server/restapi/operations"
-	"goproxy/server/wiring"
+	"github.com/stevef1uk/goproxy/server/restapi/operations"
+	"github.com/stevef1uk/goproxy/server/wiring"
 )
 
 // This file is safe to edit. Once it exists it will not be overwritten

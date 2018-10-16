@@ -13,7 +13,7 @@ import (
 
 	strfmt "github.com/go-openapi/strfmt"
 
-	models "goproxy/server/models"
+	models "github.com/stevef1uk/goproxy/server/models"
 )
 
 // GetAccounts2Reader is a Reader for the GetAccounts2 structure.
