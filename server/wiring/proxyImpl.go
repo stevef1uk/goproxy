@@ -8,11 +8,11 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 	//"github.com/tylerb/graceful"
-	"github.com/stevef1uk/goproxy/client/client/operations"
+	"github.com/stevef1uk/goproxy/client/operations"
 	server "github.com/stevef1uk/goproxy/server/restapi/operations"
 	"github.com/stevef1uk/goproxy/server/models"
 	//"time"
-	apiclient "github.com/stevef1uk/goproxy/client/client"
+	apiclient "github.com/stevef1uk/goproxy/client"
 
 	"time"
 )

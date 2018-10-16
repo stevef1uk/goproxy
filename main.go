@@ -6,8 +6,8 @@ import (
     "log"
 
     	//"github.com/tylerb/graceful"
-    	"goproxy/client/client/operations"
-    	apiclient "goproxy/client/client"
+    	"goproxy/client/operations"
+    	apiclient "goproxy/client"
       "github.com/go-openapi/swag"
 )
 
