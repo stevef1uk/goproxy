@@ -21,7 +21,7 @@ import (
 	flags "github.com/jessevdk/go-flags"
 	graceful "github.com/tylerb/graceful"
 
-	"goproxy/server/restapi/operations"
+	"github.com/stevef1uk/goproxy/server/restapi/operations"
 )
 
 const (
