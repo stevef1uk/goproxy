@@ -8,10 +8,13 @@ ADD . /go/src/github.com/stevef1uk/goproxy
 # Build the outyet command inside the container.
 # (You may fetch or manage dependencies here,
 # either manually or with a tool like "godep".)
-RUN cd /go/src/github.com/stevef1uk/goproxy; GO111MODULE=on go build server/cmd/simple-server/main.go
+RUN cd /go/src/github.com/stevef1uk/goproxy; GO111MODULE=on CGO_ENABLED=0 GOOS=linux go build -ldflags "-s" -a -installsuffix cgo -o main  server/cmd/simple-server/main.go
 
+# Final
+FROM golang:alpine
+COPY --from=0 /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
+COPY --from=0 /go/src/github.com/stevef1uk/goproxy/main /go/bin/main
 # Run the outyet command by default when the container starts.
-ENTRYPOINT /go/src/github.com/stevef1uk/goproxy/main
-
-# Document that the service listens on port 8080.
-EXPOSE 8080
+CMD ["/go/bin/main"]
+# Document that the service listens on port 5000
+EXPOSE 5000
